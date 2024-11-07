@@ -71,7 +71,7 @@ cat << EOF > pag3.html
 EOF
 
 
-if [ -f pag/w3.css ]; then
+if [ -f w3.css ]; then
 
 echo "No es necesario descargar w3.css"
 
