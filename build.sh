@@ -4,7 +4,6 @@ echo "gracias por descargar mi página web"
 
 
 
-mkdir pag
 cat << EOF > pag/index.html
 <!DOCTYPE html>
 <html lang="es">
@@ -22,7 +21,7 @@ cat << EOF > pag/index.html
 </html>
 EOF
 
-cat << EOF > pag/pag1.html
+cat << EOF > pag1.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,7 +37,7 @@ cat << EOF > pag/pag1.html
 </html>
 EOF
 
-cat << EOF > pag/pag2.html
+cat << EOF > pag2.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -55,7 +54,7 @@ cat << EOF > pag/pag2.html
 EOF
 
 
-cat << EOF > pag/pag3.html
+cat << EOF > pag3.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
