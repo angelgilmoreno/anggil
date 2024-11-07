@@ -80,7 +80,7 @@ else
 echo "Descargando la hoja de estilos."
 
 if command -v wget > /dev/null; then
-wget -q --show-progress -O pag/w3.css www.w3schools.com/w3css/4/w3.css || { echo "Fallo al descargar"; exit 1; }
+wget -q --show-progress -O w3.css www.w3schools.com/w3css/4/w3.css || { echo "Fallo al descargar"; exit 1; }
 fi
 
 fi
