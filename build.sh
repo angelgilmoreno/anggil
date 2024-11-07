@@ -4,7 +4,7 @@ echo "gracias por descargar mi página web"
 
 
 
-cat << EOF > pag/index.html
+cat << EOF > index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
