@@ -71,7 +71,7 @@ cat << EOF > pag3.html
 EOF
 
 
-if [ -f w3.css ]; then
+if [ -e w3.css ]; then
 
 echo "No es necesario descargar w3.css"
 
@@ -79,8 +79,11 @@ else
 
 echo "Descargando la hoja de estilos."
 
-if command -v wget > /dev/null; then
-wget -q --show-progress -O w3.css www.w3schools.com/w3css/4/w3.css || { echo "Fallo al descargar"; exit 1; }
+wget -q --show-progress -O w3.css www.w3schools.com/w3css/4/w3.css
+if [[ $? -ne 0 ]] ; then
+	echo "La descarga ha fallado"
+	exit 1
 fi
+echo "Finalizado"
 
 fi
